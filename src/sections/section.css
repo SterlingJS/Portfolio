@@ -1,0 +1,16 @@
+.section-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-header {
+	font-weight: bold;
+	text-decoration: wheat;
+}
+
+.intro-text {
+	margin-top: 10rem;
+}
