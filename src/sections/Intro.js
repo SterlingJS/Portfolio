@@ -1,6 +1,5 @@
 import './section.css';
 import './intro.css';
-import jim from '../res/jim.png';
 function Intro () {
 	return (
 		<div className='intro-container'>
