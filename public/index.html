@@ -28,6 +28,14 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+	<audio id='strangerAudio' autoplay loop>
+		<source src="stranger_think.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	</audio>
+	<script>
+		var audio = document.getElementById("strangerAudio");
+  		audio.volume = 0.7;
+	</script>
     <div id="root"></div>
     <!--
       This HTML file is a template.

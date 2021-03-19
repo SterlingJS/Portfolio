@@ -1,0 +1,44 @@
+.intro-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "BenguiatProITC-BoldCondensed";
+	
+	color: black;
+	-webkit-text-fill-color: none; /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: red;
+}
+
+.first-name {
+	width: fit-content;
+	height: 6rem;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-items: center;
+}
+
+.last-name {
+	width: fix-content;
+	height: 7rem;
+	display: flex;
+	flex-direction: row;
+	justify-items: flex-end;
+	justify-items: center;
+}
+
+.big-letter {
+	margin: 0;
+	width: fit-content;
+	height: fit-content;
+	font-size: 8rem;
+}
+
+.regular-letters {
+	margin: 0;
+	padding: .25rem 0;
+	font-size: 7rem;
+}

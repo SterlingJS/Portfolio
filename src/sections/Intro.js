@@ -1,11 +1,18 @@
 import './section.css';
-import jim from '../jim.png';
+import './intro.css';
+import jim from '../res/jim.png';
 function Intro () {
 	return (
-		<div className='section-container'>
-			<img src={jim} className="App-logo" alt="jim" />
-			<p className='intro-text'>Hello, I'm James Sterling</p>
-			<p className='title-text'>I am a DevSecOps Engineer</p>
+		<div className='intro-container'>
+		{/* <img src={jim} className="App-logo" alt="jim" /> */}
+			<div className='first-name'>
+				<p className='big-letter'>J</p>
+				<p className='regular-letters'>AME</p>
+				<p className='big-letter'>S</p>
+			</div>
+			<div className='last-name'>
+				<p className='regular-letters'>STERLING</p>
+			</div>
 		</div>
 	)
 }

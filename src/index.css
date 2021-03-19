@@ -1,3 +1,32 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4028901, 2021-03-18T20:57:55-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BenguiatProITC-BoldCondensed by ITC
+ * URL: https://www.myfonts.com/fonts/itc/benguiat/pro-condensed-bold/
+ * Copyright: Font software Copyright 1992 Adobe Systems Incorporated. Typeface designs Copyright 2005, 2007 International Typeface Corporation. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+@import url("//hello.myfonts.net/count/3d79e5");
+  
+@font-face {
+  font-family: "BenguiatProITC-BoldCondensed";
+  src: url('res/BenguiatProITCBoldCondensed/font.woff2') format('woff2'), url('res/BenguiatProITCBoldCondensed/font.woff') format('woff');
+}
+
+.BenguiatProITCBoldCondensed {
+	font-family: "BenguiatProITC-BoldCondensed";
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
