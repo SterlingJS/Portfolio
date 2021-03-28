@@ -1,8 +1,8 @@
-import Intro from './sections/Intro';
-import About from './sections/About';
-import Work from './sections/Work';
-import Projects from './sections/Projects';
-import Contact from './sections/Contact';
+import Intro from './sections/intro';
+import About from './sections/about';
+import Work from './sections/work';
+import Projects from './sections/projects';
+import Contact from './sections/contact';
 
 import './App.css';
 

@@ -12,33 +12,52 @@
 	-webkit-text-stroke-color: red;
 }
 
+/* height: 6rem;*/
 .first-name {
 	width: fit-content;
-	height: 6rem;
+	/* height: 14rem; */
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
 	justify-items: center;
 }
 
+/* height: 7rem; */
 .last-name {
 	width: fix-content;
-	height: 7rem;
+	/* height: 14rem; */
 	display: flex;
 	flex-direction: row;
 	justify-items: flex-end;
 	justify-items: center;
 }
 
+/* font-size: 8rem; */
 .big-letter {
 	margin: 0;
 	width: fit-content;
 	height: fit-content;
-	font-size: 8rem;
+	font-size: 16rem;
 }
 
+/* font-size: 7rem; */
 .regular-letters {
 	margin: 0;
 	padding: .25rem 0;
+	font-size: 14rem;
+}
+
+.transform {
+	-webkit-transition: all 26.5s ease;  
+	-moz-transition: all 26.5s ease;  
+	-o-transition: all 26.5s ease;  
+	-ms-transition: all 26.5s ease;  
+	transition: all 26.5s ease;
+}
+
+.transform-active {
 	font-size: 7rem;
+	/* height: 7rem; */
+
+	/* height: 6rem; */
 }

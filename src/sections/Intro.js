@@ -1,9 +1,21 @@
+import IntroModal from '../components/intro-modal'
+import $ from 'jquery';
 import './section.css';
 import './intro.css';
+
+
 function Intro () {
+
+	const beginIntro = () => {
+		$('.transform').toggleClass('transform-active');
+		var audio = document.getElementById("strangerAudio");
+  		audio.volume = 0.7;
+		audio.play()
+	}
+
 	return (
 		<div className='intro-container'>
-		{/* <img src={jim} className="App-logo" alt="jim" /> */}
+			<IntroModal beginIntro={beginIntro} />
 			<div className='first-name'>
 				<p className='big-letter'>J</p>
 				<p className='regular-letters'>AME</p>
