@@ -7,7 +7,8 @@ import './intro.css';
 function Intro () {
 
 	const beginIntro = () => {
-		$('.transform').toggleClass('transform-active');
+		$('.big-letter').toggleClass('transform-active');
+		$('.regular-letters').toggleClass('transform-active');
 		var audio = document.getElementById("strangerAudio");
   		audio.volume = 0.7;
 		audio.play()
