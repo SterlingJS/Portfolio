@@ -17,7 +17,7 @@ function Intro () {
 	}
 
 	return (
-		<div >	
+		<div>	
 			<IntroModal beginIntro={beginIntro} />
 			<div className='intro-container'>
 				<div className='large-underline' />

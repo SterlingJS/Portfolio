@@ -3,15 +3,17 @@ $starting-title-width: 500vw;
 $starting-title-height: 100vw;
 $final-title-width: 50vw;
 $final-title-height: 10vw;
-$transition-properties: all 26.5s ease;
+$transition-properties: all 26.5s;
 
 .intro-container {
-	// width: 100vw;
-	// height: 100vh;
+	width: 100vw;
+	padding: 0;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-family: "BenguiatProITC-BoldCondensed";
+	overflow-x: hidden;
 	
 	color: black;
 	-webkit-text-fill-color: none; /* Will override color (regardless of order) */
@@ -24,6 +26,7 @@ $transition-properties: all 26.5s ease;
 	background-color: green;
 	width: $starting-title-width;
 	height: $starting-title-height;
+	flex: 0 0 auto;  /* The width and height are inflexible */
 
 	-webkit-transition: $transition-properties;
 	-moz-transition: $transition-properties;
