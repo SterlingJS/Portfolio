@@ -13,6 +13,7 @@ function Intro () {
 		$('.small-underlines').toggleClass('final-title');
 		var audio = document.getElementById("strangerAudio");
   		audio.volume = 0.7;
+		audio.loop = false;
 		audio.play()
 	}
 

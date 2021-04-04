@@ -3,19 +3,21 @@ $starting-title-width: 500vh;
 $starting-title-height: 100vh;
 $final-title-width: 50vh;
 $final-title-height: 10vh;
-$starting-title-margin: 5rem;
+$starting-title-margin: 5vh;
 $final-title-margin: 5px;
 $transition-properties: all 26.5s;
+$margin-offset: calc(2 * $starting-title-margin);
 
 .intro-container {
 	width: 100vw;
-	padding: 0;
+	height: 100vh;
+	padding: 20vh;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-family: "BenguiatProITC-BoldCondensed";
-	overflow-x: hidden;
+	overflow: hidden;
 	
 	color: black;
 	-webkit-text-fill-color: none; /* Will override color (regardless of order) */
@@ -25,12 +27,14 @@ $transition-properties: all 26.5s;
 
 .starting-title {
 	position: relative;
-	margin: $starting-title-margin;
+	margin-bottom: $starting-title-margin;
 	background-color: green;
 	width: $starting-title-width;
 	height: $starting-title-height;
 	flex: 0 0 auto;  /* The width and height are inflexible */
-	top: -118vh;
+	/* 100vh + top padding + total starting top offset*/
+	/* 100vh + 20vh + 5vh */
+	top: -125vh;
 
 	-webkit-transition: $transition-properties;
 	-moz-transition: $transition-properties;
@@ -40,7 +44,7 @@ $transition-properties: all 26.5s;
 }
 
 .final-title {
-	margin: $final-title-margin;
+	margin-bottom: $final-title-margin;
 	background-color: red;
 	width: $final-title-width;
 	height: $final-title-height;
