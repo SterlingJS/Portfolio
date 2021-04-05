@@ -2,6 +2,7 @@ import IntroModal from '../components/intro-modal'
 import $ from 'jquery';
 import './section.css';
 import './intro.scss';
+import fitty from 'fitty';
 
 
 function Intro () {
@@ -17,15 +18,21 @@ function Intro () {
 		audio.play()
 	}
 
+	fitty('.james-m', {
+		maxSize: 1920
+	});
+
 	return (
 		<div>	
 			<IntroModal beginIntro={beginIntro} />
 			<div className='intro-container'>
 				<div className='large-underline' />
 				<div className='first-name'>
-					{/* <p className='big-letter'>J</p>
-					<p className='regular-letters'>AME</p>
-					<p className='big-letter'>S</p> */}
+					<p className='james-j'>J</p>
+					<p className='james-a'>A</p>
+					<p className='james-m'>M</p>
+					<p className='james-e'>E</p>
+					<p className='james-s'>S</p>
 				</div>
 				<div className='last-name'>
 					{/* <p className='regular-letters'>STERLING</p> */}
