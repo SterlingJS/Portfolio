@@ -1,11 +1,14 @@
 /* The ration for width to heigh is width = 150 screen width, height = calculated width / 1.7777777777 */
+$duration: 26.5s;
 $starting-title-width: 500vh;
 $starting-title-height: 100vh;
 $final-title-width: 50vh;
 $final-title-height: 10vh;
 $starting-title-margin: 5vh;
 $final-title-margin: 5px;
-$transition-properties: all 26.5s;
+$starting-letter-height: 100vh;
+$final-letter-height: 8rem;
+$transition-properties: all $duration;
 $margin-offset: calc(2 * $starting-title-margin);
 
 .intro-container {
@@ -33,6 +36,10 @@ $margin-offset: calc(2 * $starting-title-margin);
 	width: $starting-title-width;
 	height: $starting-title-height;
 	flex: 0 0 auto;  /* The width and height are inflexible */
+	// justify-items: center;
+	justify-content: center;
+	align-content: flex-start;
+	font-size: $starting-letter-height;
 	/* 100vh + top padding + total starting top offset*/
 	/* 100vh + 20vh + 5vh */
 	top: -125vh;
@@ -49,6 +56,7 @@ $margin-offset: calc(2 * $starting-title-margin);
 	background: red;
 	width: $final-title-width;
 	height: $final-title-height;
+	font-size: $final-letter-height;
 	offset-position: 0 0;
 	top: 0;
 }
@@ -81,9 +89,17 @@ $margin-offset: calc(2 * $starting-title-margin);
 }
 
 .letter {
-	height: 100%;
-	flex-basis: 10rem;
-	flex-grow: 1;
+	margin: 0px;
+	display: table-cell;
+	vertical-align: center;
+	height: $starting-title-height;
+	padding: 0 15%;
+	transition: padding $duration, height $duration;
+}
+
+.final-letter {
+	padding: 0;
+	height: $final-title-height;
 }
 
 .james-j {
@@ -123,18 +139,18 @@ $margin-offset: calc(2 * $starting-title-margin);
 // }
 
 /* font-size: 7rem; */
-.regular-letters {
-	margin: 0;
-	padding: .25rem 0;
-	font-size: 210rem;
-	letter-spacing: 100rem;
+// .regular-letters {
+// 	margin: 0;
+// 	padding: .25rem 0;
+// 	font-size: 210rem;
+// 	letter-spacing: 100rem;
 
-	-webkit-transition: all 26.5s ease;  
-	-moz-transition: all 26.5s ease;  
-	-o-transition: all 26.5s ease;  
-	-ms-transition: all 26.5s ease;  
-	transition: all 26.5s ease;
-}
+// 	-webkit-transition: all 26.5s ease;  
+// 	-moz-transition: all 26.5s ease;  
+// 	-o-transition: all 26.5s ease;  
+// 	-ms-transition: all 26.5s ease;  
+// 	transition: all 26.5s ease;
+// }
 
 /* p.bit-letter p.regular-letters {
 	-webkit-transition: all 26.5s ease;  

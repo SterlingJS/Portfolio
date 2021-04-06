@@ -8,19 +8,26 @@ import fitty from 'fitty';
 function Intro () {
 
 	const beginIntro = () => {
+		// fitty('.james-m', {
+		// 	maxSize: 120000
+		// });
+
 		$('.large-underline').toggleClass('final-title');
 		$('.first-name').toggleClass('final-title');
 		$('.last-name').toggleClass('final-title');
 		$('.small-underlines').toggleClass('final-title');
+		$('.james-j').toggleClass('final-letter');
+		$('.james-a').toggleClass('final-letter');
+		$('.james-m').toggleClass('final-letter');
+		$('.james-e').toggleClass('final-letter');
+		$('.james-s').toggleClass('final-letter');
 		var audio = document.getElementById("strangerAudio");
   		audio.volume = 0.7;
 		audio.loop = false;
 		audio.play()
 	}
 
-	fitty('.james-m', {
-		maxSize: 1920
-	});
+	
 
 	return (
 		<div>	
