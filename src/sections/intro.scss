@@ -1,13 +1,13 @@
 /* The ration for width to heigh is width = 150 screen width, height = calculated width / 1.7777777777 */
 $duration: 26.5s;
-$starting-title-width: 2000vh;
-$starting-title-height: 400vh;
+$starting-title-width: 4000vh;
+$starting-title-height: 800vh;
 $final-title-width: 50vh;
-$final-title-height: 10vh;
+$final-title-height: 20vh;
 $starting-title-margin: 5vh;
 $final-title-margin: 5px;
-$starting-letter-height: 100vh;
-$final-letter-height: 8rem;
+// $starting-letter-height: 100vh;
+// $final-letter-height: 8rem;
 $transition-properties: all $duration;
 $margin-offset: calc(2 * $starting-title-margin);
 
@@ -44,7 +44,7 @@ $margin-offset: calc(2 * $starting-title-margin);
 	// top: -125vh;
 
 	/* 200vh + 10vh + 10vh*/
-	top: -1000vh;
+	top: -2000vh;
 
 	-webkit-transition: $transition-properties;
 	-moz-transition: $transition-properties;
@@ -55,13 +55,13 @@ $margin-offset: calc(2 * $starting-title-margin);
 
 .final-title {
 	margin-bottom: $final-title-margin;
-	background: red;
+	// background: red;
 	width: $final-title-width;
 	height: $final-title-height;
 	font-size: $final-title-height;
 	line-height: $final-title-height;
 	offset-position: 0 0;
-	top: 0;
+	top: -$final-title-height;
 }
 
 .large-underline {
@@ -93,11 +93,12 @@ $margin-offset: calc(2 * $starting-title-margin);
 	display: table-cell;
 	vertical-align: middle;
 	padding: 0 25%;
-	transition: padding $duration;
+	transition: padding $duration, margin $duration;
 }
 
 .final-letter {
 	padding: 0;
+	// margin: 0 -2px;
 }
 
 .james-j {

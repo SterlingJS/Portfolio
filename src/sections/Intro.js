@@ -41,7 +41,7 @@ function Intro () {
 		<div>	
 			<IntroModal beginIntro={beginIntro} />
 			<div className='intro-container'>
-				<div className='large-underline'>_________</div>
+				<div className='large-underline' />
 				<div className='last-name'>
 					<p className='sterling-s'>S</p>
 					<p className='sterling-t'>T</p>
