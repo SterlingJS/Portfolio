@@ -1,7 +1,7 @@
 /* The ration for width to heigh is width = 150 screen width, height = calculated width / 1.7777777777 */
 $duration: 26.5s;
-$starting-title-width: 500vh;
-$starting-title-height: 100vh;
+$starting-title-width: 2000vh;
+$starting-title-height: 400vh;
 $final-title-width: 50vh;
 $final-title-height: 10vh;
 $starting-title-margin: 5vh;
@@ -21,7 +21,6 @@ $margin-offset: calc(2 * $starting-title-margin);
 	align-items: center;
 	font-family: "BenguiatProITC-BoldCondensed";
 	overflow: hidden;
-	
 	color: black;
 	-webkit-text-fill-color: none; /* Will override color (regardless of order) */
 	-webkit-text-stroke-width: 2px;
@@ -36,14 +35,16 @@ $margin-offset: calc(2 * $starting-title-margin);
 	width: $starting-title-width;
 	height: $starting-title-height;
 	flex: 0 0 auto;  /* The width and height are inflexible */
-	// justify-items: center;
 	justify-content: center;
 	align-content: flex-start;
 	font-size: $starting-title-height;
 	line-height: $starting-title-height;
 	/* 100vh + top padding + total starting top offset*/
 	/* 100vh + 20vh + 5vh */
-	top: -125vh;
+	// top: -125vh;
+
+	/* 200vh + 10vh + 10vh*/
+	top: -1000vh;
 
 	-webkit-transition: $transition-properties;
 	-moz-transition: $transition-properties;
@@ -58,7 +59,6 @@ $margin-offset: calc(2 * $starting-title-margin);
 	width: $final-title-width;
 	height: $final-title-height;
 	font-size: $final-title-height;
-	
 	line-height: $final-title-height;
 	offset-position: 0 0;
 	top: 0;
@@ -68,17 +68,14 @@ $margin-offset: calc(2 * $starting-title-margin);
 	@extend .starting-title;
 }
 
-
 .first-name {
 	@extend .starting-title;
 	display: flex;
 	flex-direction: row;
-
 	align-items: flex-start;
 	justify-items: center;
 }
 
-/* height: 7rem; */
 .last-name {
 	@extend .starting-title;
 	display: flex;
@@ -97,32 +94,50 @@ $margin-offset: calc(2 * $starting-title-margin);
 	vertical-align: middle;
 	padding: 0 25%;
 	transition: padding $duration;
-	
 }
-// , height $duration 	height: $final-title-height;
 
 .final-letter {
 	padding: 0;
-
 }
 
 .james-j {
 	@extend .letter;
 }
-
 .james-a {
 	@extend .letter;
 }
-
 .james-m {
 	@extend .letter;
 }
-
 .james-e {
 	@extend .letter;
 }
-
 .james-s {
+	@extend .letter;
+}
+
+.sterling-s {
+	@extend .letter;
+}
+.sterling-t {
+	@extend .letter;
+}
+.sterling-e {
+	@extend .letter;
+}
+.sterling-r {
+	@extend .letter;
+}
+.sterling-l {
+	@extend .letter;
+}
+.sterling-i {
+	@extend .letter;
+}
+.sterling-n {
+	@extend .letter;
+}
+.sterling-g {
 	@extend .letter;
 }
 
