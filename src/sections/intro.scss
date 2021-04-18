@@ -2,19 +2,20 @@
 $duration: 26.5s;
 $starting-title-width: 4000vh;
 $starting-title-height: 800vh;
-$final-title-width: 50vh;
+$final-title-width: 95vh;
 $final-title-height: 20vh;
 $starting-title-margin: 5vh;
 $final-title-margin: 5px;
+$solid-line-height: 1.5vh;
+$solid-line-width: 95%;
 // $starting-letter-height: 100vh;
 // $final-letter-height: 8rem;
 $transition-properties: all $duration;
 $margin-offset: calc(2 * $starting-title-margin);
 
 .intro-container {
-	width: 100vw;
+	width: fit-content;
 	height: 100vh;
-	padding: 20vh;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
@@ -44,7 +45,7 @@ $margin-offset: calc(2 * $starting-title-margin);
 	// top: -125vh;
 
 	/* 200vh + 10vh + 10vh*/
-	top: -2000vh;
+	top: -950vh;
 
 	-webkit-transition: $transition-properties;
 	-moz-transition: $transition-properties;
@@ -61,12 +62,24 @@ $margin-offset: calc(2 * $starting-title-margin);
 	font-size: $final-title-height;
 	line-height: $final-title-height;
 	offset-position: 0 0;
-	top: -$final-title-height;
+	top: 20vh;
 }
 
-.large-underline {
+.final-large-line {
+	top: 24vh;
+}
+
+.large-line {
+	@extend .starting-title;
+	height: $solid-line-height;
+	width: $solid-line-width;
+	border: .5vh solid red;
+}
+
+.small-underlines {
 	@extend .starting-title;
 }
+
 
 .first-name {
 	@extend .starting-title;
@@ -82,10 +95,6 @@ $margin-offset: calc(2 * $starting-title-margin);
 	flex-direction: row;
 	justify-items: flex-end;
 	justify-items: center;
-}
-
-.small-underlines {
-	@extend .starting-title;
 }
 
 .letter {
@@ -119,6 +128,7 @@ $margin-offset: calc(2 * $starting-title-margin);
 
 .sterling-s {
 	@extend .letter;
+
 }
 .sterling-t {
 	@extend .letter;
@@ -139,6 +149,9 @@ $margin-offset: calc(2 * $starting-title-margin);
 	@extend .letter;
 }
 .sterling-g {
+	@extend .letter;
+}
+.sterling-comma {
 	@extend .letter;
 }
 

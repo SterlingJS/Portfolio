@@ -12,7 +12,7 @@ function Intro () {
 		// 	maxSize: 120000
 		// });
 
-		$('.large-underline').toggleClass('final-title');
+		$('.large-line').toggleClass('final-large-line');
 		$('.first-name').toggleClass('final-title');
 		$('.last-name').toggleClass('final-title');
 		$('.small-underlines').toggleClass('final-title');
@@ -29,6 +29,7 @@ function Intro () {
 		$('.sterling-i').toggleClass('final-letter');
 		$('.sterling-n').toggleClass('final-letter');
 		$('.sterling-g').toggleClass('final-letter');
+		$('.sterling-comma').toggleClass('final-letter');
 		var audio = document.getElementById("strangerAudio");
   		audio.volume = 0.7;
 		audio.loop = false;
@@ -41,7 +42,7 @@ function Intro () {
 		<div>	
 			<IntroModal beginIntro={beginIntro} />
 			<div className='intro-container'>
-				<div className='large-underline' />
+				<div className='large-line' />
 				<div className='last-name'>
 					<p className='sterling-s'>S</p>
 					<p className='sterling-t'>T</p>
@@ -51,6 +52,7 @@ function Intro () {
 					<p className='sterling-i'>I</p>
 					<p className='sterling-n'>N</p>
 					<p className='sterling-g'>G</p>
+					<p className='sterling-comma'>,</p>
 				</div>
 				<div className='first-name'>
 					<p className='james-j'>J</p>
