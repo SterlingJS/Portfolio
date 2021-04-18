@@ -8,27 +8,23 @@ import fitty from 'fitty';
 function Intro () {
 
 	const beginIntro = () => {
-		// fitty('.james-m', {
-		// 	maxSize: 120000
-		// });
-
 		$('.large-line').toggleClass('final-large-line');
+		$('.small-line').toggleClass('final-small-line');
 		$('.first-name').toggleClass('final-title');
 		$('.last-name').toggleClass('final-title');
-		$('.small-underlines').toggleClass('final-title');
 		$('.james-j').toggleClass('final-letter');
 		$('.james-a').toggleClass('final-letter');
 		$('.james-m').toggleClass('final-letter');
 		$('.james-e').toggleClass('final-letter');
 		$('.james-s').toggleClass('final-letter');
-		$('.sterling-s').toggleClass('final-letter');
+		$('.sterling-s').toggleClass('final-large-letter');
 		$('.sterling-t').toggleClass('final-letter');
 		$('.sterling-e').toggleClass('final-letter');
 		$('.sterling-r').toggleClass('final-letter');
 		$('.sterling-l').toggleClass('final-letter');
 		$('.sterling-i').toggleClass('final-letter');
 		$('.sterling-n').toggleClass('final-letter');
-		$('.sterling-g').toggleClass('final-letter');
+		$('.sterling-g').toggleClass('final-large-letter');
 		$('.sterling-comma').toggleClass('final-letter');
 		var audio = document.getElementById("strangerAudio");
   		audio.volume = 0.7;
@@ -55,16 +51,15 @@ function Intro () {
 					<p className='sterling-comma'>,</p>
 				</div>
 				<div className='first-name'>
+					<div className='small-line'/>
 					<p className='james-j'>J</p>
 					<p className='james-a'>A</p>
 					<p className='james-m'>M</p>
 					<p className='james-e'>E</p>
 					<p className='james-s'>S</p>
+					<div className='small-line'/>
 				</div>
-				<div className='small-underlines' >
-					{/* <div className='left-underline' />
-					<div className='right-underline' /> */}
-				</div>
+				
 			</div>
 		</div>
 	)

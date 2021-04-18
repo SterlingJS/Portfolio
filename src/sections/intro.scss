@@ -1,15 +1,18 @@
 /* The ration for width to heigh is width = 150 screen width, height = calculated width / 1.7777777777 */
-$duration: 26.5s;
+// $duration: 26.5s;
+$duration: 2.65s;
 $starting-title-width: 4000vh;
 $starting-title-height: 800vh;
 $final-title-width: 95vh;
-$final-title-height: 20vh;
+$final-title-height: 16.5vh;
+$final-font-size: 20vh;
+$final-large-font-size: 25vh;
 $starting-title-margin: 5vh;
 $final-title-margin: 5px;
 $solid-line-height: 1.5vh;
-$solid-line-width: 95%;
-// $starting-letter-height: 100vh;
-// $final-letter-height: 8rem;
+$solid-line-width: 87.5%;
+$comma-offset: 3.5vh;
+$line-border: .35vh solid red;
 $transition-properties: all $duration;
 $margin-offset: calc(2 * $starting-title-margin);
 
@@ -40,13 +43,7 @@ $margin-offset: calc(2 * $starting-title-margin);
 	align-content: flex-start;
 	font-size: $starting-title-height;
 	line-height: $starting-title-height;
-	/* 100vh + top padding + total starting top offset*/
-	/* 100vh + 20vh + 5vh */
-	// top: -125vh;
-
-	/* 200vh + 10vh + 10vh*/
 	top: -950vh;
-
 	-webkit-transition: $transition-properties;
 	-moz-transition: $transition-properties;
 	-o-transition: $transition-properties;
@@ -56,30 +53,13 @@ $margin-offset: calc(2 * $starting-title-margin);
 
 .final-title {
 	margin-bottom: $final-title-margin;
-	// background: red;
 	width: $final-title-width;
 	height: $final-title-height;
-	font-size: $final-title-height;
+	font-size: $final-font-size;
 	line-height: $final-title-height;
 	offset-position: 0 0;
 	top: 20vh;
 }
-
-.final-large-line {
-	top: 24vh;
-}
-
-.large-line {
-	@extend .starting-title;
-	height: $solid-line-height;
-	width: $solid-line-width;
-	border: .5vh solid red;
-}
-
-.small-underlines {
-	@extend .starting-title;
-}
-
 
 .first-name {
 	@extend .starting-title;
@@ -95,8 +75,37 @@ $margin-offset: calc(2 * $starting-title-margin);
 	flex-direction: row;
 	justify-items: flex-end;
 	justify-items: center;
+	left: $comma-offset;
 }
 
+// Line styling ----------------------------------------
+.final-large-line {
+	top: 24.5vh;
+	left: 0;
+}
+
+.final-small-line {
+	margin-top: 1.75vh;
+}
+
+.large-line {
+	@extend .starting-title;
+	height: $solid-line-height;
+	width: $solid-line-width;
+	border: $line-border;
+	border-radius: 5px;
+	left: 0;
+}
+
+.small-line {
+	height: $solid-line-height;
+	width: 12vh;
+	border: $line-border;
+	margin-top: 60vh;
+	transition: margin-top $duration;
+}
+
+// Letter level control  -------------------------------
 .letter {
 	margin: 0px;
 	display: table-cell;
@@ -105,9 +114,16 @@ $margin-offset: calc(2 * $starting-title-margin);
 	transition: padding $duration, margin $duration;
 }
 
+.final-large-letter {
+	padding: 0;
+	font-size: $final-large-font-size;
+	line-height: 18vh;
+	display: table-cell;
+	vertical-align: top;
+}
+
 .final-letter {
 	padding: 0;
-	// margin: 0 -2px;
 }
 
 .james-j {
@@ -128,7 +144,6 @@ $margin-offset: calc(2 * $starting-title-margin);
 
 .sterling-s {
 	@extend .letter;
-
 }
 .sterling-t {
 	@extend .letter;
@@ -154,41 +169,3 @@ $margin-offset: calc(2 * $starting-title-margin);
 .sterling-comma {
 	@extend .letter;
 }
-
-/* font-size: 8rem; */
-/* TODO: Find a way to include the transition attributes without duplicating them*/
-// .big-letter {
-// 	margin: 0;
-// 	width: fit-content;
-// 	height: fit-content;
-// 	font-size: 240rem;
-// 	letter-spacing: 100rem;
-
-// 	-webkit-transition: all 26.5s ease;  
-// 	-moz-transition: all 26.5s ease;  
-// 	-o-transition: all 26.5s ease;  
-// 	-ms-transition: all 26.5s ease;  
-// 	transition: all 26.5s ease;
-// }
-
-/* font-size: 7rem; */
-// .regular-letters {
-// 	margin: 0;
-// 	padding: .25rem 0;
-// 	font-size: 210rem;
-// 	letter-spacing: 100rem;
-
-// 	-webkit-transition: all 26.5s ease;  
-// 	-moz-transition: all 26.5s ease;  
-// 	-o-transition: all 26.5s ease;  
-// 	-ms-transition: all 26.5s ease;  
-// 	transition: all 26.5s ease;
-// }
-
-/* p.bit-letter p.regular-letters {
-	-webkit-transition: all 26.5s ease;  
-	-moz-transition: all 26.5s ease;  
-	-o-transition: all 26.5s ease;  
-	-ms-transition: all 26.5s ease;  
-	transition: all 26.5s ease;
-} */
