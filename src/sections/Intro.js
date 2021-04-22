@@ -8,13 +8,12 @@ import fitty from 'fitty';
 function Intro () {
 
 	const beginIntro = () => {
+		document.getElementById('leftLine').classList.add('final');
+		document.getElementById('rightLine').classList.add('final');
 		document.getElementById('largeLine').classList.add('final');
 		document.getElementById('firstName').classList.add('final');
 		document.getElementById('lastName').classList.add('final');
-		//$('.large-line').addClass('final');
-		$('.small-line').toggleClass('final-small-line');
-		// $('.first-name').toggleClass('final-title');
-		// $('.last-name').toggleClass('final-title');
+		document.getElementById('jamesJ').classList.add('final');
 		$('.james-j').toggleClass('final-letter');
 		$('.james-a').toggleClass('final-letter');
 		$('.james-m').toggleClass('final-letter');
@@ -30,7 +29,7 @@ function Intro () {
 		$('.sterling-g').toggleClass('final-large-letter');
 		$('.sterling-comma').toggleClass('final-letter');
 		var audio = document.getElementById("strangerAudio");
-  		audio.volume = 0.7;
+  		audio.volume = 0.0;
 		audio.loop = false;
 		audio.play()
 	}
@@ -54,13 +53,13 @@ function Intro () {
 					<p className='sterling-comma'>,</p>
 				</div>
 				<div id='firstName' >
-					<div className='small-line'/>
-					<p className='james-j'>J</p>
+					<div id='leftLine' className='small-line'/>
+					<p id='jamesJ' className='james-j'>J</p>
 					<p className='james-a'>A</p>
 					<p className='james-m'>M</p>
 					<p className='james-e'>E</p>
 					<p className='james-s'>S</p>
-					<div className='small-line'/>
+					<div id='rightLine' className='small-line'/>
 				</div>
 				
 			</div>

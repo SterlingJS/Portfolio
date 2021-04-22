@@ -54,7 +54,6 @@ $margin-offset: calc(2 * $starting-title-margin);
 .starting-title {
 	position: relative;
 	margin-bottom: $starting-title-margin;
-	outline-color: green;
 	outline-width: 4px;
 	height: $starting-title-height;
 	display: flex;
@@ -102,7 +101,7 @@ $margin-offset: calc(2 * $starting-title-margin);
 
 // Line styling ----------------------------------------
 #largeLine.final {
-	top: 24vh;
+	top: 24.5vh;
 	@extend .delayed-transition;
 }
 
@@ -116,15 +115,34 @@ $margin-offset: calc(2 * $starting-title-margin);
 	top: -1000vh;
 }
 
-#smallLine.final {
-	margin-top: 1.75vh;
+.small-line {
+	position: relative;
+	height: $solid-line-height;
+	width: 17vh;
+	border: $line-border;
+	border-radius: 5px;
+	top: 2vh;
 }
 
-.small-line {
-	height: $solid-line-height;
-	width: 12vh;
-	border: $line-border;
-	margin-top: 60vh;
+#leftLine.final {
+	right: -1vh;
+	// left: 1vh;
+	@extend .delayed-transition;
+}
+
+#rightLine.final {
+	left: 0;
+	@extend .delayed-transition;
+}
+
+#leftLine {
+	right: 400vh;
+	transition: none;
+}
+
+#rightLine {
+	left: 400vh;
+	transition: none;
 }
 
 // Letter level control  -------------------------------
@@ -134,7 +152,6 @@ $margin-offset: calc(2 * $starting-title-margin);
 	vertical-align: middle;
 	padding: 0 25%;
 	transition: padding $duration, margin $duration;
-	//, font-size $duration, height $duration, line-height $duration
 }
 
 .final-large-letter {
@@ -147,7 +164,23 @@ $margin-offset: calc(2 * $starting-title-margin);
 }
 
 .final-letter {
+	top: 0;
 	padding: 0;
+}
+
+#jamedfsJ.final {
+	top: 0;
+	margin: 0;
+	padding: 0;
+	@extend .transition;
+}
+
+#jamdfesJ {
+	// position: relative;
+	// padding-top: 400vh;
+	// margin: 400vh 0 0 0;
+	@extend .letter;
+	// @extend .transition;
 }
 
 .james-j {
