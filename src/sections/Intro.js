@@ -8,10 +8,13 @@ import fitty from 'fitty';
 function Intro () {
 
 	const beginIntro = () => {
-		$('.large-line').toggleClass('final-large-line');
+		document.getElementById('largeLine').classList.add('final');
+		document.getElementById('firstName').classList.add('final');
+		document.getElementById('lastName').classList.add('final');
+		//$('.large-line').addClass('final');
 		$('.small-line').toggleClass('final-small-line');
-		$('.first-name').toggleClass('final-title');
-		$('.last-name').toggleClass('final-title');
+		// $('.first-name').toggleClass('final-title');
+		// $('.last-name').toggleClass('final-title');
 		$('.james-j').toggleClass('final-letter');
 		$('.james-a').toggleClass('final-letter');
 		$('.james-m').toggleClass('final-letter');
@@ -38,8 +41,8 @@ function Intro () {
 		<div>	
 			<IntroModal beginIntro={beginIntro} />
 			<div className='intro-container'>
-				<div className='large-line' />
-				<div className='last-name'>
+				<div id='largeLine' />
+				<div id='lastName'>
 					<p className='sterling-s'>S</p>
 					<p className='sterling-t'>T</p>
 					<p className='sterling-e'>E</p>
@@ -50,7 +53,7 @@ function Intro () {
 					<p className='sterling-g'>G</p>
 					<p className='sterling-comma'>,</p>
 				</div>
-				<div className='first-name'>
+				<div id='firstName' >
 					<div className='small-line'/>
 					<p className='james-j'>J</p>
 					<p className='james-a'>A</p>

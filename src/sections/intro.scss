@@ -1,7 +1,8 @@
 /* The ration for width to heigh is width = 150 screen width, height = calculated width / 1.7777777777 */
 // $duration: 26.5s;
-$duration: 2.65s;
-$starting-title-width: 4000vh;
+$duration: 26.5s;
+$starting-first-name-width: 4000vh;
+$starting-last-name-width: 8000vh;
 $starting-title-height: 800vh;
 $final-title-width: 95vh;
 $final-title-height: 16.5vh;
@@ -10,14 +11,17 @@ $final-large-font-size: 25vh;
 $starting-title-margin: 5vh;
 $final-title-margin: 5px;
 $solid-line-height: 1.5vh;
-$solid-line-width: 87.5%;
+$solid-line-width: 90vh;
 $comma-offset: 3.5vh;
 $line-border: .35vh solid red;
-$transition-properties: all $duration;
+$transition-properties: all $duration ease;
+$delayed-transition-properties: all 13.5s ease 13s;
 $margin-offset: calc(2 * $starting-title-margin);
 
 .intro-container {
+	left: $comma-offset;
 	width: fit-content;
+	padding-right: $comma-offset;
 	height: 100vh;
 	margin: 0;
 	display: flex;
@@ -31,24 +35,38 @@ $margin-offset: calc(2 * $starting-title-margin);
 	-webkit-text-stroke-color: red;
 }
 
-.starting-title {
-	position: relative;
-	margin-bottom: $starting-title-margin;
-	outline-color: green;
-	outline-width: 4px;
-	width: $starting-title-width;
-	height: $starting-title-height;
-	flex: 0 0 auto;  /* The width and height are inflexible */
-	justify-content: center;
-	align-content: flex-start;
-	font-size: $starting-title-height;
-	line-height: $starting-title-height;
-	top: -950vh;
+.transition {
 	-webkit-transition: $transition-properties;
 	-moz-transition: $transition-properties;
 	-o-transition: $transition-properties;
 	-ms-transition: $transition-properties;
 	transition: $transition-properties;
+}
+
+.delayed-transition {
+	-webkit-transition: $delayed-transition-properties;
+	-moz-transition: $delayed-transition-properties;
+	-o-transition: $delayed-transition-properties;
+	-ms-transition: $delayed-transition-properties;
+	transition: $delayed-transition-properties;
+}
+
+.starting-title {
+	position: relative;
+	margin-bottom: $starting-title-margin;
+	outline-color: green;
+	outline-width: 4px;
+	height: $starting-title-height;
+	display: flex;
+	flex-direction: row;
+	flex: 0 0 auto;  /* The width and height are inflexible */
+	justify-content: center;
+	justify-items: center;
+	align-content: flex-start;
+	font-size: $starting-title-height;
+	line-height: $starting-title-height;
+	top: -950vh;
+	@extend .transition;
 }
 
 .final-title {
@@ -61,40 +79,45 @@ $margin-offset: calc(2 * $starting-title-margin);
 	top: 20vh;
 }
 
-.first-name {
-	@extend .starting-title;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-items: center;
+#lastName.final  {
+	@extend .final-title;
 }
 
-.last-name {
+#firstName.final {
+	@extend .final-title;
+}
+
+#firstName {
 	@extend .starting-title;
-	display: flex;
-	flex-direction: row;
+	width: $starting-first-name-width;
+	align-items: flex-start;
+}
+
+#lastName {
+	@extend .starting-title;
+	width: $starting-last-name-width;
 	justify-items: flex-end;
-	justify-items: center;
 	left: $comma-offset;
 }
 
 // Line styling ----------------------------------------
-.final-large-line {
-	top: 24.5vh;
-	left: 0;
+#largeLine.final {
+	top: 24vh;
+	@extend .delayed-transition;
 }
 
-.final-small-line {
-	margin-top: 1.75vh;
-}
-
-.large-line {
+#largeLine {
 	@extend .starting-title;
 	height: $solid-line-height;
 	width: $solid-line-width;
 	border: $line-border;
 	border-radius: 5px;
 	left: 0;
+	top: -1000vh;
+}
+
+#smallLine.final {
+	margin-top: 1.75vh;
 }
 
 .small-line {
@@ -102,7 +125,6 @@ $margin-offset: calc(2 * $starting-title-margin);
 	width: 12vh;
 	border: $line-border;
 	margin-top: 60vh;
-	transition: margin-top $duration;
 }
 
 // Letter level control  -------------------------------
@@ -112,9 +134,11 @@ $margin-offset: calc(2 * $starting-title-margin);
 	vertical-align: middle;
 	padding: 0 25%;
 	transition: padding $duration, margin $duration;
+	//, font-size $duration, height $duration, line-height $duration
 }
 
 .final-large-letter {
+	transition: font-size $duration;
 	padding: 0;
 	font-size: $final-large-font-size;
 	line-height: 18vh;
