@@ -1,22 +1,34 @@
-/* The ration for width to heigh is width = 150 screen width, height = calculated width / 1.7777777777 */
-// $duration: 26.5s;
-$duration: 26.5s;
 $starting-first-name-width: 4000vh;
 $starting-last-name-width: 8000vh;
-$starting-title-height: 800vh;
+$starting-title-height: 600vh;
+$starting-title-margin: 5vh;
 $final-title-width: 95vh;
 $final-title-height: 16.5vh;
 $final-font-size: 20vh;
 $final-large-font-size: 25vh;
-$starting-title-margin: 5vh;
 $final-title-margin: 5px;
 $solid-line-height: 1.5vh;
 $solid-line-width: 90vh;
 $comma-offset: 3.5vh;
 $line-border: .35vh solid red;
-$transition-properties: all $duration ease;
-$delayed-transition-properties: all 13.5s ease 13s;
+// cubic-bezier(.2,.04,0,.94);
+//cubic-bezier(.18,.04,0,.87)
+//cubic-bezier(.14,.08,.01,.93)
+// cubic-bezier(.14,.08,.02,.98)
+$duration: 26.5s;
+$half-duration: 13.25s;
+$transition-model: cubic-bezier(.12,.1,0,.99);
+$transition-properties: all $duration $transition-model;
+$delayed-transition-properties: all 13.5s $transition-model 13s;
+$half-duration-transition: padding $half-duration $transition-model, margin $half-duration $transition-model;
 $margin-offset: calc(2 * $starting-title-margin);
+
+$large-offset: 2000vh;
+$negative-large-offset: -2000vh;
+$medium-offset: 1000vh;
+$negative-medium-offset: -1000vh;
+$small-offset: 500vh;
+$negative-small-offset: -500vh;
 
 .intro-container {
 	left: $comma-offset;
@@ -64,7 +76,7 @@ $margin-offset: calc(2 * $starting-title-margin);
 	align-content: flex-start;
 	font-size: $starting-title-height;
 	line-height: $starting-title-height;
-	top: -950vh;
+	top: -875vh;
 	@extend .transition;
 }
 
@@ -124,6 +136,16 @@ $margin-offset: calc(2 * $starting-title-margin);
 	top: 2vh;
 }
 
+#leftLine {
+	right: 400vh;
+	transition: none;
+}
+
+#rightLine {
+	left: 400vh;
+	transition: none;
+}
+
 #leftLine.final {
 	right: -1vh;
 	// left: 1vh;
@@ -135,18 +157,10 @@ $margin-offset: calc(2 * $starting-title-margin);
 	@extend .delayed-transition;
 }
 
-#leftLine {
-	right: 400vh;
-	transition: none;
-}
-
-#rightLine {
-	left: 400vh;
-	transition: none;
-}
-
 // Letter level control  -------------------------------
+// TODO: Update with proper properties
 .letter {
+	position: relative;
 	margin: 0px;
 	display: table-cell;
 	vertical-align: middle;
@@ -154,75 +168,89 @@ $margin-offset: calc(2 * $starting-title-margin);
 	transition: padding $duration, margin $duration;
 }
 
-.final-large-letter {
-	transition: font-size $duration;
+#jamesJ {
+	@extend .letter;
+	padding-right: $medium-offset;
+}
+
+#jamesA {
+	@extend .letter;
+	padding-right: $medium-offset;
+	transition: $half-duration-transition;
+}
+
+#jamesM {
+	@extend .letter;
+}
+
+#jamesE {
+	@extend .letter;
+	padding-left: $medium-offset;
+	transition: $half-duration-transition;
+}
+
+#jamesS {
+	@extend .letter;
+	padding-right: $medium-offset;
+}
+
+#sterlingS {
+	@extend .letter;
+	padding-right: $medium-offset;
+}
+
+#sterlingT {
+	@extend .letter;
+}
+
+#sterlingE {
+	@extend .letter;
+	margin-top: $negative-medium-offset;
+}
+
+#sterlingR {
+	@extend .letter;
+	padding-right: $small-offset;
+}
+
+#sterlingL {
+	@extend .letter;
+}
+
+#sterlingI {
+	@extend .letter;
+	transition: $half-duration-transition;
+}
+
+#sterlingN {
+	@extend .letter;
+	margin-top: $negative-large-offset;
+}
+
+#sterlingG {
+	@extend .letter;
+	padding-left: $large-offset;
+}
+
+#sterlingComma {
+	@extend .letter;
+}
+
+.final-letter {
+	margin: 0;
 	padding: 0;
+}
+
+#jamesJ.final, #jamesA.final, #jamesM.final, #jamesE.final, #jamesS.final, #sterlingT.final, #sterlingE.final, #sterlingR.final, #sterlingL.final, #sterlingI.final, #sterlingN.final,  #sterlingComma.final {
+	@extend .final-letter;
+}
+
+#sterlingS.final, #sterlingG.final {
+	// transition: font-size $duration;
+	padding: 0;
+	margin: 0;
 	font-size: $final-large-font-size;
 	line-height: 18vh;
 	display: table-cell;
 	vertical-align: top;
-}
-
-.final-letter {
-	top: 0;
-	padding: 0;
-}
-
-#jamedfsJ.final {
-	top: 0;
-	margin: 0;
-	padding: 0;
-	@extend .transition;
-}
-
-#jamdfesJ {
-	// position: relative;
-	// padding-top: 400vh;
-	// margin: 400vh 0 0 0;
-	@extend .letter;
-	// @extend .transition;
-}
-
-.james-j {
-	@extend .letter;
-}
-.james-a {
-	@extend .letter;
-}
-.james-m {
-	@extend .letter;
-}
-.james-e {
-	@extend .letter;
-}
-.james-s {
-	@extend .letter;
-}
-
-.sterling-s {
-	@extend .letter;
-}
-.sterling-t {
-	@extend .letter;
-}
-.sterling-e {
-	@extend .letter;
-}
-.sterling-r {
-	@extend .letter;
-}
-.sterling-l {
-	@extend .letter;
-}
-.sterling-i {
-	@extend .letter;
-}
-.sterling-n {
-	@extend .letter;
-}
-.sterling-g {
-	@extend .letter;
-}
-.sterling-comma {
-	@extend .letter;
 }

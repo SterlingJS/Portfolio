@@ -14,22 +14,21 @@ function Intro () {
 		document.getElementById('firstName').classList.add('final');
 		document.getElementById('lastName').classList.add('final');
 		document.getElementById('jamesJ').classList.add('final');
-		$('.james-j').toggleClass('final-letter');
-		$('.james-a').toggleClass('final-letter');
-		$('.james-m').toggleClass('final-letter');
-		$('.james-e').toggleClass('final-letter');
-		$('.james-s').toggleClass('final-letter');
-		$('.sterling-s').toggleClass('final-large-letter');
-		$('.sterling-t').toggleClass('final-letter');
-		$('.sterling-e').toggleClass('final-letter');
-		$('.sterling-r').toggleClass('final-letter');
-		$('.sterling-l').toggleClass('final-letter');
-		$('.sterling-i').toggleClass('final-letter');
-		$('.sterling-n').toggleClass('final-letter');
-		$('.sterling-g').toggleClass('final-large-letter');
-		$('.sterling-comma').toggleClass('final-letter');
+		document.getElementById('jamesA').classList.add('final');
+		document.getElementById('jamesM').classList.add('final');
+		document.getElementById('jamesE').classList.add('final');
+		document.getElementById('jamesS').classList.add('final');
+		document.getElementById('sterlingS').classList.add('final');
+		document.getElementById('sterlingT').classList.add('final');
+		document.getElementById('sterlingE').classList.add('final');
+		document.getElementById('sterlingR').classList.add('final');
+		document.getElementById('sterlingL').classList.add('final');
+		document.getElementById('sterlingI').classList.add('final');
+		document.getElementById('sterlingN').classList.add('final');
+		document.getElementById('sterlingG').classList.add('final');
+		document.getElementById('sterlingComma').classList.add('final');
 		var audio = document.getElementById("strangerAudio");
-  		audio.volume = 0.0;
+  		audio.volume = 0.6;
 		audio.loop = false;
 		audio.play()
 	}
@@ -42,23 +41,23 @@ function Intro () {
 			<div className='intro-container'>
 				<div id='largeLine' />
 				<div id='lastName'>
-					<p className='sterling-s'>S</p>
-					<p className='sterling-t'>T</p>
-					<p className='sterling-e'>E</p>
-					<p className='sterling-r'>R</p>
-					<p className='sterling-l'>L</p>
-					<p className='sterling-i'>I</p>
-					<p className='sterling-n'>N</p>
-					<p className='sterling-g'>G</p>
-					<p className='sterling-comma'>,</p>
+					<p id='sterlingS'>S</p>
+					<p id='sterlingT'>T</p>
+					<p id='sterlingE'>E</p>
+					<p id='sterlingR'>R</p>
+					<p id='sterlingL'>L</p>
+					<p id='sterlingI'>I</p>
+					<p id='sterlingN'>N</p>
+					<p id='sterlingG'>G</p>
+					<p id='sterlingComma'>,</p>
 				</div>
 				<div id='firstName' >
 					<div id='leftLine' className='small-line'/>
-					<p id='jamesJ' className='james-j'>J</p>
-					<p className='james-a'>A</p>
-					<p className='james-m'>M</p>
-					<p className='james-e'>E</p>
-					<p className='james-s'>S</p>
+					<p id='jamesJ'>J</p>
+					<p id='jamesA'>A</p>
+					<p id='jamesM'>M</p>
+					<p id='jamesE'>E</p>
+					<p id='jamesS'>S</p>
 					<div id='rightLine' className='small-line'/>
 				</div>
 				
