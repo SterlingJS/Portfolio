@@ -27,17 +27,37 @@ function Intro () {
 		document.getElementById('sterlingN').classList.add('final');
 		document.getElementById('sterlingG').classList.add('final');
 		document.getElementById('sterlingComma').classList.add('final');
+		var audioToggle = document.getElementById("audioToggleButton");
+		audioToggle.style.display = "visible";
 		var audio = document.getElementById("strangerAudio");
-  		audio.volume = 0.6;
+  		audio.volume = 1.0;
 		audio.loop = false;
-		audio.play()
+		audio.play();
+
 	}
 
-	
+	const toggleVolume = () => {
+		var audio = document.getElementById("strangerAudio");
+		var volumeToggle = document.getElementById("audioToggleButton");
+		if (audio.volume == 0) {
+			audio.volume = 1.0;
+			volumeToggle.classList.remove('muted');
+		} else {
+			audio.volume = 0;
+			volumeToggle.classList.add('muted');
+		}
+	}
+
+
 
 	return (
 		<div>	
 			<IntroModal beginIntro={beginIntro} />
+			<audio id='strangerAudio' autostart="false">
+				<source src="stranger_think.mp3" type="audio/mpeg"/>
+				Your browser does not support the audio element. 
+			</audio>
+			<div id='audioToggleButton' onClick={toggleVolume}/>
 			<div className='intro-container'>
 				<div id='largeLine' />
 				<div id='lastName'>
