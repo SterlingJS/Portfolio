@@ -1,12 +1,12 @@
 import './section.css';
 
-var workData = {
-	WorkHistory: "<span>About Dev Quest<br/><br/>Do you want to go on an epic quest to uncover the magic of coding? Seize the chance to learn about web development and get a scholarship or an internship.</span><br/><br/><br/><span>Are you a developer?<br/> Y / N</span><br/>"
-}
+// var workData = {
+// 	WorkHistory: "<span>About Dev Quest<br/><br/>Do you want to go on an epic quest to uncover the magic of coding? Seize the chance to learn about web development and get a scholarship or an internship.</span><br/><br/><br/><span>Are you a developer?<br/> Y / N</span><br/>"
+// }
 
 function Work() {
 
-	var allElements = document.getElementsByClassName("typeing");
+	// var allElements = document.getElementsByClassName("typeing");
 
 	// Loop through all the typeing class elements
 	// for (var j = 0; j < allElements.length; j++) {
