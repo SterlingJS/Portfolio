@@ -1,8 +1,6 @@
 import IntroModal from '../components/intro-modal'
-import $ from 'jquery';
 import './section.css';
 import './intro.scss';
-import fitty from 'fitty';
 
 
 function Intro () {
@@ -39,7 +37,7 @@ function Intro () {
 	const toggleVolume = () => {
 		var audio = document.getElementById("strangerAudio");
 		var volumeToggle = document.getElementById("audioToggleButton");
-		if (audio.volume == 0) {
+		if (audio.volume === 0) {
 			audio.volume = 1.0;
 			volumeToggle.classList.remove('muted');
 		} else {

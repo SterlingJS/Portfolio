@@ -1,0 +1,36 @@
+$line-height: 1rem;
+
+.work-container {
+	width: 100vw;
+	min-height: 30rem;
+	display: flex;
+	flex-direction: row;
+	justify-items: flex-start;
+	align-items: center;
+}
+
+.type-box {
+	width: $line-height;
+	height: $line-height;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	color: yellow;
+	font-family: monospace;
+}
+
+.blinker {
+	opacity: 1;
+	margin-bottom: -2px;
+	height: $line-height;
+	margin-left: -5px;
+	border-left: 7px solid yellow;
+	animation: blinker 0.9s steps(2, start) infinite;
+}
+
+@keyframes blinker {
+	to {
+		visibility: hidden;
+	}
+}
