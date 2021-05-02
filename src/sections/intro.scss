@@ -185,7 +185,7 @@ $negative-small-offset: -500vh;
 
 #jamesJ {
 	@extend .letter;
-	padding-right: $medium-offset;
+	padding-right: $small-offset;
 }
 #jamesA {
 	@extend .letter;
@@ -229,7 +229,7 @@ $negative-small-offset: -500vh;
 }
 #sterlingN {
 	@extend .letter;
-	margin-top: $negative-large-offset;
+	margin-top: $negative-medium-offset;
 }
 #sterlingG {
 	@extend .letter;
