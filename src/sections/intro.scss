@@ -1,16 +1,22 @@
+// Starting sizes are based on vh
 $starting-first-name-width: 4000vh;
 $starting-last-name-width: 8000vh;
 $starting-title-height: 600vh;
 $starting-title-margin: 5vh;
-$final-title-width: 95vh;
-$final-title-height: 16.5vh;
-$final-font-size: 20vh;
-$final-large-font-size: 25vh;
+
+// Final sizes are in vw
+// 1080 / 1920 = 0.5625
+// vw = 0.5625 * vh
+$final-title-width: 53.4vw;
+$final-title-height: 9.3vw;
+$final-font-size: 11.25vw;
+$final-large-font-size: 14vw;
 $final-title-margin: 5px;
-$solid-line-height: 1.5vh;
-$solid-line-width: 90vh;
-$comma-offset: 3.5vh;
-$line-border: .35vh solid red;
+$solid-line-height: 1vw;
+$solid-line-width: 50.6vw;
+$comma-offset: 2vw;
+$line-border: .25vw solid red;
+
 $duration: 26.5s;
 $half-duration: 13.25s;
 $transition-model: cubic-bezier(.12,.1,0,.99);
@@ -19,6 +25,7 @@ $delayed-transition-properties: all 13.5s $transition-model 13s;
 $half-duration-transition: padding $half-duration $transition-model, margin $half-duration $transition-model;
 $margin-offset: calc(2 * $starting-title-margin);
 
+// All starting offsets are based off vh
 $large-offset: 2000vh;
 $negative-large-offset: -2000vh;
 $medium-offset: 1000vh;
@@ -52,12 +59,13 @@ $negative-small-offset: -500vh;
 
 .intro-container {
 	left: $comma-offset;
-	width: fit-content;
+	width: 100vw;
 	padding-right: $comma-offset;
 	height: 100vh;
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	font-family: "BenguiatProITC-BoldCondensed";
 	overflow: hidden;
@@ -96,7 +104,7 @@ $negative-small-offset: -500vh;
 	align-content: flex-start;
 	font-size: $starting-title-height;
 	line-height: $starting-title-height;
-	top: -875vh;
+	top: -300vh;
 	@extend .transition;
 }
 
@@ -107,7 +115,8 @@ $negative-small-offset: -500vh;
 	font-size: $final-font-size;
 	line-height: $final-title-height;
 	offset-position: 0 0;
-	top: 20vh;
+	// top: -20vw;
+	top: 0;
 }
 
 #lastName.final  {
@@ -133,7 +142,10 @@ $negative-small-offset: -500vh;
 
 // Line styling ----------------------------------------
 #largeLine.final {
-	top: 24.5vh;
+	justify-self: flex-end;
+	margin-bottom: 0;
+	// top: -21vw;
+	top: -1vw;
 	@extend .delayed-transition;
 }
 
@@ -150,10 +162,10 @@ $negative-small-offset: -500vh;
 .small-line {
 	position: relative;
 	height: $solid-line-height;
-	width: 17vh;
+	width: 9.56vw;
 	border: $line-border;
 	border-radius: 5px;
-	top: 2vh;
+	top: 1.125vw;
 }
 
 #leftLine {
@@ -165,7 +177,7 @@ $negative-small-offset: -500vh;
 	transition: none;
 }
 #leftLine.final {
-	right: -1vh;
+	right: -0.5625vw;
 	@extend .delayed-transition;
 }
 #rightLine.final {
@@ -229,7 +241,7 @@ $negative-small-offset: -500vh;
 }
 #sterlingN {
 	@extend .letter;
-	margin-top: $negative-medium-offset;
+	margin-top: $negative-small-offset;
 }
 #sterlingG {
 	@extend .letter;
@@ -253,7 +265,7 @@ $negative-small-offset: -500vh;
 	padding: 0;
 	margin: 0;
 	font-size: $final-large-font-size;
-	line-height: 18vh;
+	line-height: 10.125vw;
 	display: table-cell;
 	vertical-align: top;
 }
