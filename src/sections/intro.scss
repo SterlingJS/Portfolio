@@ -161,13 +161,12 @@ $negative-small-offset: -500vh;
 }
 
 .small-line {
-	justify-self: flex-start;
+	align-self: flex-start;
 	position: relative;
 	height: $solid-line-height;
 	width: 9.56vw;
 	border: $line-border;
 	border-radius: 5px;
-	// top: 1.125vw;
 	top: 15px;
 }
 
@@ -229,7 +228,7 @@ $negative-small-offset: -500vh;
 }
 #sterlingE {
 	@extend .letter;
-	margin-top: $negative-medium-offset;
+	margin-top: $negative-small-offset;
 }
 #sterlingR {
 	@extend .letter;
@@ -244,7 +243,7 @@ $negative-small-offset: -500vh;
 }
 #sterlingN {
 	@extend .letter;
-	margin-top: $negative-small-offset;
+	margin-top: $negative-medium-offset;
 }
 #sterlingG {
 	@extend .letter;
