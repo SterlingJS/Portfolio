@@ -145,7 +145,8 @@ $negative-small-offset: -500vh;
 	justify-self: flex-end;
 	margin-bottom: 0;
 	// top: -21vw;
-	top: -1vw;
+	// top: -1vw;
+	top: -10px;
 	@extend .delayed-transition;
 }
 
@@ -165,7 +166,8 @@ $negative-small-offset: -500vh;
 	width: 9.56vw;
 	border: $line-border;
 	border-radius: 5px;
-	top: 1.125vw;
+	// top: 1.125vw;
+	top: 10px;
 }
 
 #leftLine {
