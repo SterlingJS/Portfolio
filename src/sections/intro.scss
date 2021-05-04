@@ -16,7 +16,7 @@ $final-title-margin: 5px;
 $solid-line-height: 1vw;
 $solid-line-width: 50.6vw;
 $comma-offset: 2vw;
-$line-border: .25vw solid red;
+$line-border: .25vw solid var(--stranger-red);
 
 $duration: 26.5s;
 $half-duration: 13.25s;
@@ -70,10 +70,10 @@ $negative-small-offset: -500vh;
 	align-items: center;
 	font-family: "BenguiatProITC-BoldCondensed";
 	overflow: hidden;
-	color: black;
+	color: var(--background-color);
 	-webkit-text-fill-color: none; /* Will override color (regardless of order) */
 	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: red;
+	-webkit-text-stroke-color: var(--stranger-red);
 }
 
 .transition {

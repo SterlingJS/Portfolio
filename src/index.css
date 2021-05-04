@@ -40,3 +40,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+	--background-color: #121212;
+	--secondary-color: #3c4042;
+	--tertiary-color: #606368;
+	--highlight-color: #b8bbc0;
+	
+	--stranger-red: #ff1515;
+
+
+	--accent-color: #e980f7;
+	/* --accent-color2: #80e9f7;
+	--accent-color: #80f7e9;
+	--accent-color: #e9f780;
+	--accent-color: #f7e980;
+	--accent-color: #f780e9; */
+}
