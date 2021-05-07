@@ -16,7 +16,6 @@ function App () {
 				<Projects />
 				<Contact />
 			</header>
-			<button className='resume-btn'>Resume &#8594;</button>
 		</div>
 	);
 }

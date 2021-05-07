@@ -1,10 +1,12 @@
-import './section.css';
+import Section from '../components/section'
 
 function Contact () {
 	return (
-		<div className='section-container'>
-			
-		</div>
+		<Section title="CONTACT">
+			<div className="body-text">
+				Call me maybe
+			</div>
+		</Section>
 	)
 }
 

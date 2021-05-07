@@ -1,4 +1,4 @@
-import './section.css';
+import Section from '../components/section'
 
 // var workData = {
 // 	WorkHistory: "<span>About Dev Quest<br/><br/>Do you want to go on an epic quest to uncover the magic of coding? Seize the chance to learn about web development and get a scholarship or an internship.</span><br/><br/><br/><span>Are you a developer?<br/> Y / N</span><br/>"
@@ -27,13 +27,11 @@ function Work() {
 	// 	})();
 	// }
 	return (
-		<div className='section-container'>
-			<p className='section-header'>WORK EXPERIENCE</p>
-			<div className='type-box'>
-				{/* <span id="AboutDevTypeText" className="typeing"></span> */}
-				<span className='blinker'>&#32;</span>
+		<Section title='WORK'>
+			<div className='body-text'>
+				I did do some work
 			</div>
-		</div>
+		</Section>
 	)
 }
 

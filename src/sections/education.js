@@ -1,10 +1,12 @@
-import './education.scss'
+import Section from '../components/section'
 
 function Education () {
 	return (
-		<div className='section-container'>
-			<p className='section-header'>ABOUT</p>
-		</div>
+		<Section title="EDUCATION">
+			<div className='body-text'>
+				I went to collegeeeee!
+			</div>
+		</Section>
 	)
 }
 

@@ -15,7 +15,7 @@
 }
 
 .App-container {
-	background-color: black;
+	background-color: var(--background-color);
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -29,7 +29,7 @@
 .App-link {
 	color: #61dafb;
 }
-
+/* 
 .resume-btn {
 	position: fixed;
 	right: 5rem;
@@ -37,18 +37,6 @@
 	width: 10rem;
 	height: 5rem;
 	background: none;
-
-	/* text: wheat; */
-
 	border: 2px solid wheat;
 	border-radius: 15px;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(-30deg);
-	}
-	to {
-		transform: rotate(30deg);
-	}
-}
+} */

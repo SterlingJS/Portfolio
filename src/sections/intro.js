@@ -1,5 +1,5 @@
 import IntroModal from '../components/intro-modal'
-import './section.css';
+// import './section.css';
 import './intro.scss';
 
 

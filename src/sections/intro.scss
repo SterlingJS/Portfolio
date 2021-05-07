@@ -145,7 +145,7 @@ $negative-small-offset: -500vh;
 #largeLine.final {
 	justify-self: flex-end;
 	margin-bottom: 0;
-	top: calc(max(-1vw, -1.5vh));
+	top: calc(max(-1.25vw, -1.5vh));
 	@extend .delayed-transition;
 }
 

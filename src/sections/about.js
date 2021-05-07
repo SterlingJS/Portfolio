@@ -1,10 +1,12 @@
-import './section.css';
+import Section from '../components/section'
 
 function About () {
 	return (
-		<div className='section-container'>
-			<p className='section-header'>ABOUT</p>
-		</div>
+		<Section title="ABOUT">
+			<div className="body-text">
+				I'm just a bill!
+			</div>
+		</Section>
 	)
 }
 
