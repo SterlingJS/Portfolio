@@ -1,0 +1,29 @@
+.education-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+// TODO: We don't want to hard code these values. Find a better way to represent this
+.education-button-container {
+	display: flex;
+	flex-direction: row;
+	width: fit-content;
+	// margin-bottom: .35rem;
+	height: fit-content;
+	
+	min-height: 6.25rem;
+	min-width: 18.75rem;
+}
+
+.college-description-container {
+	width: 90%;
+	padding: 5%;
+	height: fit-content;
+
+	background-color: var(--level-one);
+	border-radius: 5px;
+	
+	text-align: center;
+}

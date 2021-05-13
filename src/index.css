@@ -19,8 +19,8 @@
 @import url("//hello.myfonts.net/count/3d79e5");
   
 @font-face {
-  font-family: "BenguiatProITC-BoldCondensed";
-  src: url('res/BenguiatProITCBoldCondensed/font.woff2') format('woff2'), url('res/BenguiatProITCBoldCondensed/font.woff') format('woff');
+	font-family: "BenguiatProITC-BoldCondensed";
+	src: url('res/BenguiatProITCBoldCondensed/font.woff2') format('woff2'), url('res/BenguiatProITCBoldCondensed/font.woff') format('woff');
 }
 
 .BenguiatProITCBoldCondensed {
@@ -62,8 +62,12 @@ code {
 	--cyan-200: #80DEEA;
 	--teal-200: #80CBC4;
 
-	--background-color: black;
-	--surface-color: var(--dp01);
+	--background-color: #121212;
+	--surface-color: #1e1e1e;
+	--level-one: #2c2c2c;
+	--level-two: #333333; 
+	--level-three: #383838;
+
 	--primary-color: var(--red-200);
 
 	--high-opacity: 87%;
