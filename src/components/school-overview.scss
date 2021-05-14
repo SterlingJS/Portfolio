@@ -1,0 +1,45 @@
+.school-overview-container {
+	width: 100%;
+	height: fit-content;
+
+	// background-color: var(--level-one);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	align-items: center;
+}
+
+.school-name {
+	opacity: var(--high-opacity);
+	font-size: var(--h3);
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.school-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	align-items: flex-start;
+}
+
+.labeled-field {
+	min-width: 7rem;
+	height: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 5rem 2rem;
+	font-size: var(--subtitle);
+}
+
+.label {
+	opacity: var(--medium-opacity);
+}
+
+.field-value {
+	opacity: var(--high-opacity);
+}

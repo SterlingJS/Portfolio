@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../components/section'
+import SchoolOverview from '../components/school-overview'
 import ImageButton from '../components/image-button.component'
 import RIT from '../res/rit.png'
 import GT from '../res/gt.png'
@@ -34,33 +35,29 @@ class Education extends React.Component {
 		switch(this.state.activeCollege) {
 			case colleges.GT:
 				return (
-					<div className='college-description-container'>
-						I will be attending Geogia Tech's Online Masters Science in Computer Sciene (OMSCS) with a Machine Learning specialization part time starting August 2021.
-
-						Degree: MS Computer Science
-						Expected Graduation: Fall 2024
-						GPA: N/a
-					</div>
+					<SchoolOverview 
+					school="Georgia Institute of Technology"
+					degree="MS Computer Science"
+					specialization="Machine Learning Specialization"
+					graduated={false} 
+					graduationDate="Fall 2024" />
 				)
 			case colleges.RIT:
 				return (
-					<div className='college-description-container'>
-						At Rochester Institue of Technology, I majored in Computer Science with a Cultural Anthropology immersion. I spent more time at the library than sleeping.
-
-						Degree: BS Computer Science
-						Gradutation: May 2019
-						GPA: 3.53
-					</div>
+					<SchoolOverview 
+					school="Rochester Institute of Technology"
+					degree="BS Computer Science"
+					specialization="Data Science Concentration"
+					graduated={true} 
+					graduationDate="May 2019" />
 				)
 			case colleges.MCC:
 				return (
-					<div className='college-description-container'>
-						I received my Associates in Computer Science from Monroe Community College through a 2 + 3 program with RIT.
-
-						Degree: AS Computer Science 
-						Graduation: June 2016
-						GPA: 3.80
-					</div>
+					<SchoolOverview 
+					school="Monroe Community College"
+					degree="AS Computer Science"
+					graduated={true} 
+					graduationDate="June 2016" />
 				)
 			default:
 				return null

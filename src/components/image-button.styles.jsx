@@ -30,11 +30,9 @@ export const ImageButtonContainer = styled.button`
 `;
 
 export const ImageButtonImage = styled.img`
-	
 	max-width: 90%;
 	max-height: 100%;
 	padding: none;
 	margin: none;
-
 	border-radius: 4px;
 `;

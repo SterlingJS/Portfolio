@@ -41,19 +41,20 @@ code {
     monospace;
 }
 
+/* 
+For reference, here are all the dark mode levels
+--dp00: #121212;
+--dp01: #1e1e1e;
+--dp02: #222222;
+--dp03: #242424;
+--dp04: #272727;
+--dp06: #2c2c2c;
+--dp08: #2e2e2e;
+--dp12: #333333;
+--dp16: #343434;
+--dp24: #383838; */
+
 :root {
-
-	--dp00: #121212;
-	--dp01: #1e1e1e;
-	--dp02: #222222;
-	--dp03: #242424;
-	--dp04: #272727;
-	--dp06: #2c2c2c;
-	--dp08: #2e2e2e;
-	--dp12: #333333;
-	--dp16: #343434;
-	--dp24: #383838;
-
 	--blue-200: #90CAF9;
 	--red-200: #EF9A9A;
 	--purple-200: #CE93D8;
@@ -67,6 +68,16 @@ code {
 	--level-one: #2c2c2c;
 	--level-two: #333333; 
 	--level-three: #383838;
+
+	--h1: 6rem; 
+	--h2: 3.75rem;
+	--h3: 3rem;
+	--h4: 2.125rem;
+	--h5: 1.5rem;
+	--h6: 1.25rem;
+	--body: 1rem;
+	--subtitle: 1rem;
+
 
 	--primary-color: var(--red-200);
 

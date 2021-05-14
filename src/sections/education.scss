@@ -1,4 +1,5 @@
 .education-container {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -15,15 +16,4 @@
 	
 	min-height: 6.25rem;
 	min-width: 18.75rem;
-}
-
-.college-description-container {
-	width: 90%;
-	padding: 5%;
-	height: fit-content;
-
-	background-color: var(--level-one);
-	border-radius: 5px;
-	
-	text-align: center;
 }
