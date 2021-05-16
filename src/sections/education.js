@@ -61,8 +61,8 @@ class Education extends React.Component {
 					specialization="Data Science Concentration"
 					graduated={true} 
 					graduationDate="May 2019" >
-						<Course title='Intro to computers' 
-						description='Research, analyize and implement different types of advanced algs'
+						<Course title='Analysis of Algorithms' 
+						description=''
 						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
 						<Course title='Machine Learning for Trade' 
 						description='Research, analyize and implement different types of advanced algs'
