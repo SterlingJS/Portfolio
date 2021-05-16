@@ -11,14 +11,15 @@ const LabeledField = ({label, value, ...props}) => {
 	)
 }
 
-const SchoolOverview = ({ schoolName, graduated, graduationDate, degree, ...props}) => {
+const SchoolOverview = ({ schoolName, graduated, graduationDate, degree, children, ...props}) => {
 	return (
 		<div className='school-overview-container'>
 			<div className='school-name'>{schoolName}</div>
-			<div className='school-footer'>
+			<div className='school-header'>
 				<LabeledField label="Degree" value={degree}  secondaryValue={props.specialization} />
 				<LabeledField label={graduated ? "Graduated" : "Graduating"} value={graduationDate} />
 			</div>
+			{ children }
 		</div>
 	)
 }

@@ -4,15 +4,15 @@ import styled from 'styled-components'
 // TODO: Pass in width and heigh values?
 export const ImageButtonContainer = styled.button`
 	
-	margin: 0 6px;
+	margin: 0 .5rem;
 	padding: none;
 	border-radius: 4px;
 	background: none;
 	border: none;
 
 	z-index: 2;
-	width: 10vw;
-	height: 10vw;
+	${ props => props.width ?  `width: ${props.width};` : 'width: 6rem;' }
+	${ props => props.height ? `height: ${props.height};` : 'height: 6rem;'}
 	min-width: 6rem;
 	min-height: 6rem;
 

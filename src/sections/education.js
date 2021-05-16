@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from '../components/section'
+import Course from '../components/course'
 import SchoolOverview from '../components/school-overview'
 import ImageButton from '../components/image-button.component'
 import RIT from '../res/rit.png'
@@ -13,7 +14,7 @@ let colleges = {
 	MCC: "MCC"
 }
 
-const IMG_BTN_DIM = "6rem"
+const IMG_BTN_DIM = "7.5rem"
 
 class Education extends React.Component {
 	constructor (props) {
@@ -36,28 +37,46 @@ class Education extends React.Component {
 			case colleges.GT:
 				return (
 					<SchoolOverview 
-					school="Georgia Institute of Technology"
+					schoolName="Georgia Institute of Technology"
 					degree="MS Computer Science"
 					specialization="Machine Learning Specialization"
 					graduated={false} 
-					graduationDate="Fall 2024" />
+					graduationDate="Fall 2024" >
+						<Course title='Intro to Graduate Algorithms' 
+						description='Research, analyize and implement different types of advanced algs'
+						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
+						<Course title='Machine Learning for Trade' 
+						description='Research, analyize and implement different types of advanced algs'
+						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
+						<Course title='Intro to pizza eating' 
+						description='Research, analyize and implement different types of advanced algs'
+						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
+					</SchoolOverview>
 				)
 			case colleges.RIT:
 				return (
 					<SchoolOverview 
-					school="Rochester Institute of Technology"
+					schoolName="Rochester Institute of Technology"
 					degree="BS Computer Science"
 					specialization="Data Science Concentration"
 					graduated={true} 
-					graduationDate="May 2019" />
+					graduationDate="May 2019" >
+						<Course title='Intro to computers' 
+						description='Research, analyize and implement different types of advanced algs'
+						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
+						<Course title='Machine Learning for Trade' 
+						description='Research, analyize and implement different types of advanced algs'
+						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
+					</SchoolOverview>
 				)
 			case colleges.MCC:
 				return (
 					<SchoolOverview 
-					school="Monroe Community College"
+					schoolName="Monroe Community College"
 					degree="AS Computer Science"
 					graduated={true} 
-					graduationDate="June 2016" />
+					graduationDate="June 2016" >
+					</SchoolOverview>
 				)
 			default:
 				return null

@@ -1,0 +1,27 @@
+.course-container {
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	background-color: var(--level-three);
+	flex-direction: column;
+	justify-items: flex-start;
+	align-items: flex-start;
+	transition: all .05s ease-in;
+	margin-top: 1rem;
+	
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.0125);
+	}
+
+}
+
+.course-title {
+	font-size: var(--body);
+	opacity: var(--high-opacity);
+}
+
+.course-description {
+	font-size: var(--body);
+	opacity: var(--medium-opacity);
+}
