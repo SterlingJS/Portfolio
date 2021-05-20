@@ -8,13 +8,16 @@
 	align-items: flex-start;
 	transition: all .05s ease-in;
 	margin-top: 1rem;
-	
-	&:hover {
-		cursor: pointer;
-		transform: scale(1.0125);
-	}
 
+	
 }
+
+.course-container:hover {
+	cursor: pointer;
+	transform: scale(1.0125);
+}
+
+
 
 .course-title {
 	font-size: var(--body);

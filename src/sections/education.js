@@ -42,15 +42,15 @@ class Education extends React.Component {
 					specialization="Machine Learning Specialization"
 					graduated={false} 
 					graduationDate="Fall 2024" >
-						<Course title='Intro to Graduate Algorithms' 
-						description='Research, analyize and implement different types of advanced algs'
+						{/* <Course title='Intro to Graduate Algorithms' 
+						description=''
 						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
 						<Course title='Machine Learning for Trade' 
+						description=''
+						link='https://omscs.gatech.edu/cs-7646-machine-learning-trading' />
+						<Course title='Network Security' 
 						description='Research, analyize and implement different types of advanced algs'
-						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
-						<Course title='Intro to pizza eating' 
-						description='Research, analyize and implement different types of advanced algs'
-						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
+						link='https://omscs.gatech.edu/cs-6262-network-security' /> */}
 					</SchoolOverview>
 				)
 			case colleges.RIT:
@@ -61,12 +61,18 @@ class Education extends React.Component {
 					specialization="Data Science Concentration"
 					graduated={true} 
 					graduationDate="May 2019" >
+						<Course title='Introduction to Artificial Intelligence' 
+						description=''
+						image='res/intelligent_systems.png' />
+						{/* <Course title='Introduction to Data Mining' 
+						description=''
+						image='res/data_mining.png' />
+						<Course title='Concepts of Parallel and Distributed Systems' 
+						description=''
+						image='res/copads.png' />
 						<Course title='Analysis of Algorithms' 
 						description=''
-						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
-						<Course title='Machine Learning for Trade' 
-						description='Research, analyize and implement different types of advanced algs'
-						link='https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms' />
+						image='res/analysis_of_algo.png' /> */}
 					</SchoolOverview>
 				)
 			case colleges.MCC:
