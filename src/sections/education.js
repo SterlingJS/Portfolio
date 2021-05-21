@@ -6,6 +6,10 @@ import ImageButton from '../components/image-button.component'
 import RIT from '../res/rit.png'
 import GT from '../res/gt.png'
 import MCC from '../res/mcc.png'
+import INTELLIGENT_SYSTEMS from '../res/intelligent_systems.png'
+import ANALYSIS_OF_ALGO from '../res/analysis_of_algo.png'
+import COPADS from '../res/copads.png'
+import DATA_MINING from '../res/data_mining.png'
 import './education.scss'
 
 let colleges = {
@@ -63,16 +67,16 @@ class Education extends React.Component {
 					graduationDate="May 2019" >
 						<Course title='Introduction to Artificial Intelligence' 
 						description=''
-						image='res/intelligent_systems.png' />
-						{/* <Course title='Introduction to Data Mining' 
+						image={INTELLIGENT_SYSTEMS} />
+						<Course title='Introduction to Data Mining' 
 						description=''
-						image='res/data_mining.png' />
+						image={DATA_MINING} />
 						<Course title='Concepts of Parallel and Distributed Systems' 
 						description=''
-						image='res/copads.png' />
+						image={COPADS} />
 						<Course title='Analysis of Algorithms' 
 						description=''
-						image='res/analysis_of_algo.png' /> */}
+						image={ANALYSIS_OF_ALGO} />
 					</SchoolOverview>
 				)
 			case colleges.MCC:
