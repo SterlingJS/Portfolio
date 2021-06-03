@@ -6,12 +6,6 @@
 	height: 100vh;
 	background: white;
 	z-index: 3;
-
-	:hover {
-		cursor: default;
-		transform: scale(1.0);
-	}
-	// opacity: 50%;
 	
 }
 
@@ -28,7 +22,4 @@
 	max-width: 80vw;
 	height: auto;
 
-	:hover {
-		cursor: pointer;
-	}
 }
