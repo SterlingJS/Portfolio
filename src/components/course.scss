@@ -9,14 +9,11 @@
 	transition: all .05s ease-in;
 	margin-top: 1rem;
 
-	
+	&:hover {
+		cursor: pointer;
+		// transform: scale(1.0125);
+	}
 }
-
-.course-container:hover {
-	cursor: pointer;
-	transform: scale(1.0125);
-}
-
 
 
 .course-title {
@@ -28,3 +25,39 @@
 	font-size: var(--body);
 	opacity: var(--medium-opacity);
 }
+
+// .image-modal-background {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100vw;
+// 	height: 100vh;
+// 	background: black;
+// 	opacity: 50%;
+// 	z-index: 3;
+
+// 	&:hover{
+// 		cursor: default;
+// 		transform: none;
+// 	}
+	
+// }
+
+// .image-modal-container {
+
+// 	position: fixed;
+// 	top: 50%;
+// 	left: 50%;
+// 	//transform: translate(-50%, -50%);
+// 	z-index: 3;
+// 	padding: 0;
+// 	width: 60vw;
+// 	min-width: 40rem;
+// 	max-width: 80vw;
+// 	height: auto;
+
+// 	&:hover {
+// 		cursor: default;
+// 		transform: none;
+// 	}
+// }
