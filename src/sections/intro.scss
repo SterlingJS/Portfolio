@@ -105,7 +105,6 @@ $negative-small-offset: -500vh;
 	justify-items: center;
 	align-content: flex-start;
 	font-size: $starting-title-height;
-	// line-height: $starting-title-height;
 	top: -300vh;
 	@extend .transition;
 }
@@ -115,9 +114,7 @@ $negative-small-offset: -500vh;
 	width: $final-title-width;
 	height: $final-title-height;
 	font-size: $final-font-size;
-	// line-height: $final-title-height;
 	offset-position: 0 0;
-	// top: -20vw;
 	top: 0;
 }
 
@@ -192,9 +189,9 @@ $negative-small-offset: -500vh;
 .letter {
 	position: relative;
 	margin: 0px;
-	display: table-cell;
+	display: inline-block;
 	vertical-align: middle;
-	padding: 0 25%;
+	line-height: 100%;
 	transition: padding $duration, margin $duration;
 }
 
@@ -267,8 +264,8 @@ $negative-small-offset: -500vh;
 #sterlingS.final, #sterlingG.final {
 	padding: 0;
 	margin: 0;
+	height: fit-content;
 	font-size: $final-large-font-size;
-	// line-height: 10.125vw;
-	display: table-cell;
+	display: inline-block;
 	vertical-align: top;
 }
