@@ -20,7 +20,10 @@
   
 @font-face {
 	font-family: "BenguiatProITC-BoldCondensed";
-	src: url('res/BenguiatProITCBoldCondensed/font.woff2') format('woff2'), url('res/BenguiatProITCBoldCondensed/font.woff') format('woff'), url('res/BenguiatProITCBoldCondensed/font.ttf') format('truetype'), url('res/BenguiatProITCBoldCondensed/font.otf') format('opentype');
+	src: url('res/BenguiatProITCBoldCondensed/font.woff2') format('woff2'), 
+	url('res/BenguiatProITCBoldCondensed/font.woff') format('woff'), 
+	url('res/BenguiatProITCBoldCondensed/font.ttf') format('truetype'), 
+	url('res/BenguiatProITCBoldCondensed/font.otf') format('opentype');
 }
 
 .BenguiatProITCBoldCondensed {

@@ -105,7 +105,7 @@ $negative-small-offset: -500vh;
 	justify-items: center;
 	align-content: flex-start;
 	font-size: $starting-title-height;
-	line-height: $starting-title-height;
+	// line-height: $starting-title-height;
 	top: -300vh;
 	@extend .transition;
 }
@@ -115,7 +115,7 @@ $negative-small-offset: -500vh;
 	width: $final-title-width;
 	height: $final-title-height;
 	font-size: $final-font-size;
-	line-height: $final-title-height;
+	// line-height: $final-title-height;
 	offset-position: 0 0;
 	// top: -20vw;
 	top: 0;
@@ -139,6 +139,7 @@ $negative-small-offset: -500vh;
 	@extend .starting-title;
 	width: $starting-last-name-width;
 	justify-items: flex-end;
+	align-items: flex-start;
 	left: $comma-offset;
 }
 
@@ -267,7 +268,7 @@ $negative-small-offset: -500vh;
 	padding: 0;
 	margin: 0;
 	font-size: $final-large-font-size;
-	line-height: 10.125vw;
+	// line-height: 10.125vw;
 	display: table-cell;
 	vertical-align: top;
 }
