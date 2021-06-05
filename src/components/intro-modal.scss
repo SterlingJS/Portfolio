@@ -1,0 +1,33 @@
+
+.intro-modal-dialog {
+	width: fit-content;
+}
+
+.intro-modal-content {
+	background: none;
+	width: fit-content;
+	height: fit-content;
+
+	&:hover {
+
+	}
+}
+
+.intro-modal-play-button {
+	background-color: var(--level-five);
+	color: white;
+	opacity: var(--high-opacity);
+	align-self: center;
+	display: table-cell;
+	width: 12rem;
+	height: 4rem;
+	font-size: 2rem;
+	vertical-align: top;
+	border-radius: 5px;
+	background-color: none;
+
+	&:hover {
+		background-color: var(--level-four);
+		color: lightgray;
+	}
+}

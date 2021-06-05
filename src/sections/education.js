@@ -21,6 +21,7 @@ let colleges = {
 const IMG_BTN_DIM = "7.5rem"
 
 class Education extends React.Component {
+
 	constructor (props) {
 		super(props);
 

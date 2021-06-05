@@ -4,22 +4,32 @@ import Education from './sections/education'
 import Work from './sections/work';
 import Projects from './sections/projects';
 import Contact from './sections/contact';
-
+import React from 'react';
 import './App.css';
 
-function App () {
-	return (
-		<div className="App">
-			<header className="App-container">
-				<Intro />
-				<Education />
-				<About />
-				<Work />
-				<Projects />
-				<Contact />
-			</header>
-		</div>
-	);
-}
+class App extends React.Component {
+	// constructor (props) {
+	// 	super(props);
+	// }
+
+	// componentDidMount () {
+	// 	window.scrollTo(0, 0)
+	// }
+
+	render = () => {
+		return (
+			<div className="App">
+				<header className="App-container">
+					<Intro />
+					<Education />
+					<About />
+					<Work />
+					<Projects />
+					<Contact />
+				</header>
+			</div>
+		);
+	}
+} 
 
 export default App;
