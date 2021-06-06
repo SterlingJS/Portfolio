@@ -89,5 +89,9 @@ For reference, here are all the dark mode levels
 	--medium-opacity: 60%;
 	--disabled-opacity: 38%;
 
+	--high-visibility: #DEDEDE;
+	--medium-visibility: #999999;
+	--disabled-visibility: #616161;
+
 	--stranger-red: #ff1515;
 }

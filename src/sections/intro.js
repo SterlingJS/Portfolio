@@ -46,6 +46,10 @@ function Intro () {
 		}
 	}
 
+	const scrollToEducation = () => {
+		
+	}
+
 
 
 	return (
@@ -77,6 +81,11 @@ function Intro () {
 					<p id='jamesE'>E</p>
 					<p id='jamesS'>S</p>
 					<div id='rightLine' className='small-line'/>
+				</div>
+				<div id='educationScroll' >
+					<button id='educationScrollButton' onClick={scrollToEducation} >
+						More
+					</button>
 				</div>
 				
 			</div>

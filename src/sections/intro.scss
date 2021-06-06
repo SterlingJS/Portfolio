@@ -34,30 +34,6 @@ $negative-medium-offset: -1000vh;
 $small-offset: 500vh;
 $negative-small-offset: -500vh;
 
-#strangerAudio {
-	display: static;
-}
-
-#audioToggleButton {
-	z-index: 2;
-	background: url('../res/volume-full.svg');
-	background-size: 100%;
-	position: fixed;
-	width: 3rem;
-	height: 3rem;
-	top: 2rem;
-	right: 2rem;
-	cursor: pointer;
-	border: none;
-	-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
-          filter: invert(100%);
-}
-
-#audioToggleButton.muted {
-	background: url('../res/volume-x.svg');
-	background-size: 100%;
-}
-
 .intro-container {
 	left: $comma-offset;
 	width: 100vw;
@@ -273,4 +249,49 @@ $negative-small-offset: -500vh;
 	font-size: $final-large-font-size;
 	display: inline-block;
 	vertical-align: top;
+}
+
+
+#strangerAudio {
+	display: static;
+}
+
+#audioToggleButton {
+	z-index: 2;
+	background: url('../res/volume-full.svg');
+	background-size: 100%;
+	position: fixed;
+	width: 3rem;
+	height: 3rem;
+	top: 2rem;
+	right: 2rem;
+	cursor: pointer;
+	border: none;
+	-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+          filter: invert(100%);
+}
+
+#audioToggleButton.muted {
+	z-index: 2;
+	background: url('../res/volume-x.svg');
+	-webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+          filter: invert(100%);
+	background-size: 100%;
+}
+
+/* Start off as a greyed out button, then fade in as transition happens  */
+#educationScroll {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	height: 3rem;
+	width: 10rem;
+	background: none;
+	border: 2px solid var(--disabled-visibility);
+	color: var(--disabled-visibility);
+}
+
+#educationScroll.final {
+	color: var(--high-visibility);
+	border-color: var(--high-visibility);
 }

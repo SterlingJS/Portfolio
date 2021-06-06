@@ -13,8 +13,7 @@
 
 .school-name {
 	width: 100%;
-	opacity: var(--high-opacity);
-	color: white;
+	color: var(--high-visibility);
 	font-size: var(--h5);
 	text-align: center;
 	padding-top: .25rem;
@@ -41,9 +40,9 @@
 }
 
 .label {
-	opacity: var(--medium-opacity);
+	color: var(--medium-visibility);
 }
 
 .field-value {
-	opacity: var(--high-opacity);
+	color: var(--high-visibility);
 }

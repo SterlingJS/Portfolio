@@ -13,16 +13,13 @@
 }
 
 .title-text {
-	color: white;
-	opacity: var(--high-opacity);
+	color: var(--high-visibility);
 }
 
 .body-text {
-	color: white;
-	opacity: var(--medium-opacity);
+	color: var(--medium-visibility);
 }
 
 .disabled-text {
-	color: white;
-	opacity: var(--disabled-opacity);
+	color: var(--disabled-visibility);
 }
