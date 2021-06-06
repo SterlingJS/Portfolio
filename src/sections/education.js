@@ -87,6 +87,15 @@ class Education extends React.Component {
 					degree="AS Computer Science"
 					graduated={true} 
 					graduationDate="June 2016" >
+						<Course title='Engineering Design Lab'
+						description=''
+						link='https://www.monroecc.edu/classes/202120/enr-259-sections/'/>
+						<Course title='Advanced Java Programming'
+						description=''
+						link='https://www.monroecc.edu/classes/202120/csc-225-sections/' />
+						<Course title='Introduction to Data Structures'
+						description=''
+						link='https://www.monroecc.edu/classes/202120/csc-103-sections/' />
 					</SchoolOverview>
 				)
 			default:

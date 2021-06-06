@@ -21,9 +21,9 @@ class App extends React.Component {
 			<div className="App">
 				<header className="App-container">
 					<Intro />
-					<Education />
 					<About />
 					<Work />
+					<Education />
 					<Projects />
 					<Contact />
 				</header>
