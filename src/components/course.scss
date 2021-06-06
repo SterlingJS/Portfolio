@@ -1,5 +1,9 @@
 .course-container {
 	width: 100%;
+}
+
+.course-overview {
+	width: 100%;
 	padding: 1rem;
 	display: flex;
 	background-color: var(--level-three);
@@ -11,8 +15,20 @@
 
 	&:hover {
 		cursor: pointer;
-		// transform: scale(1.0125);
+		transform: scale(1.0125);
 	}
+}
+
+.course-modal-dialog {
+	position: relative;
+}
+
+.course-modal-content {
+	position: absolute;
+	width: fit-content;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 
@@ -24,6 +40,11 @@
 .course-description {
 	font-size: var(--body);
 	color: var(--medium-visibility);
+}
+
+.course-modal-image {
+	width: 80rem;
+	max-width: 85vw;
 }
 
 // .image-modal-background {

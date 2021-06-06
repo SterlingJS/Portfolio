@@ -18,16 +18,19 @@ const Course = (props) => {
 		} 
 	}
 	return  (
-		<div className='course-container' onClick={handleCourseClick}>
-			<div className='course-title'>{props.title}</div>
-			<div className='course-description'>{props.description}</div>
+		<div className='course-container' >
+			<div className='course-overview' onClick={handleCourseClick}>
+				<div className='course-title'>{props.title}</div>
+				<div className='course-description'>{props.description}</div>
+			</div>
+			
 			<div onClick={e => e.stopPropagation()}>
-				<Modal centered show={show} onHide={handleModalClose} keyboard={false}>
+				<Modal dialogClassName='course-modal-dialog' contentClassName='course-modal-content' centered show={show} onHide={handleModalClose} keyboard={false}>
 					<Modal.Header closeButton >
 						<ModalTitle>{props.title}</ModalTitle>
 					</Modal.Header>
 					<ModalBody>
-						<img alt='Course Overview Image' src={props.image} />
+						<img className='course-modal-image' alt='Course Overview Image' src={props.image} />
 					</ModalBody>
 				</Modal>
 			</div>
