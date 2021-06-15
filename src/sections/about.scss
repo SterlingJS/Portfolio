@@ -1,0 +1,93 @@
+.about-me-container {
+	width: 100%;
+	height: fit-content;
+	padding: 1rem 2rem;
+	background-color: var(--level-one);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	align-items: center;
+}
+
+// Holds the descriptive text including job title, location and a brief professional summary
+.about-me-body {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: var(--high-visibility);
+	font-size: var(--subtitle);
+	text-align: center;
+	padding-top: .25rem;
+	padding-bottom: 1rem;
+}
+
+.about-me-title {
+	width: 100%;
+	color: var(--high-visibility);
+	font-size: var(--h5);
+	text-align: center;
+	padding-top: .25rem;
+	padding-bottom: 1rem;
+}
+
+.about-me-overview {
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	align-items: flex-start;
+}
+
+.about-me-overview-description {
+	color: var(--medium-visibility);
+}
+
+
+// Location Styling
+.about-me-location {
+	display: flex;
+	flex-direction: row;
+	justify-items: flex-start;
+	width: 9rem;
+}
+
+.about-me-location-marker {
+	width: 12%;
+	min-width: 20px;
+	margin-right: .4rem;
+}
+
+.about-me-description {
+	color: var(--medium-visibility);
+	font-size: var(--subtitle);
+}
+
+.about-me-details {
+	color: var(--high-visibility);
+	font-size: var(--h5);
+	text-align: center;
+}
+
+.polaroid-container {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.about-polaroid {
+	width: 30%;
+	max-width: 15rem;
+	min-width: 5rem;
+}
+
+.left-rotate {
+	transform: rotate(-1deg);
+}
+
+.right-rotate {
+	transform: rotate(3deg);
+}
