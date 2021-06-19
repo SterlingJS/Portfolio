@@ -41,8 +41,13 @@
 
 .label {
 	color: var(--medium-visibility);
+	margin-bottom: 1rem;
 }
 
 .field-value {
 	color: var(--high-visibility);
+}
+
+.secondary-field-value {
+	color: var(--medium-visibility);
 }

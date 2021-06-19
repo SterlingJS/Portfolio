@@ -28,9 +28,6 @@ function Work() {
 	// }
 	return (
 		<Section title='WORK'>
-			<div className='body-text'>
-				I did do some work
-			</div>
 		</Section>
 	)
 }

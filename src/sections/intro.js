@@ -82,11 +82,11 @@ function Intro () {
 					<p id='jamesS'>S</p>
 					<div id='rightLine' className='small-line'/>
 				</div>
-				<div id='educationScroll' >
+				{/* <div id='educationScroll' >
 					<button id='educationScrollButton' onClick={scrollToEducation} >
 						More
 					</button>
-				</div>
+				</div> */}
 				
 			</div>
 		</div>

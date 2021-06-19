@@ -13,8 +13,10 @@
 }
 
 .title-text {
-	font-size: var(--h4);
+	font-size: var(--h5);
+	height: var(--h4);
 	color: var(--high-visibility);
+	// text-decoration: underline;
 }
 
 .body-text {

@@ -1,0 +1,32 @@
+.contact-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: flex-start;
+	background-color: var(--level-one);
+	border-radius: 5px;
+	padding: 1rem 2rem;
+}
+
+.contact-column {
+	display: flex;
+	flex-direction: column;
+	justify-items: flex-start;
+	align-items: flex-start;
+	width: fit-content;
+	font-size: var(--subtitle);
+	color: var(--high-visibility);
+}
+
+.contact-link {
+	color: var(--high-visibility);
+	transition: scale .05s ease-in;
+
+	&:hover {
+		cursor: pointer;
+		transform: scale(1.02);
+		text-decoration: none;
+		color: var(--high-visibility);
+	}
+}

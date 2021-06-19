@@ -6,7 +6,7 @@ const LabeledField = ({label, value, ...props}) => {
 		<div className='labeled-field'>
 			<div className='label'>{label}</div>
 			<div className='field-value'>{value}</div>
-			{ props.secondaryValue ? <div className='field-value'>{props.secondaryValue}</div> : null}
+			{ props.secondaryValue ? <div className='secondary-field-value'>{props.secondaryValue}</div> : null}
 		</div>
 	)
 }
